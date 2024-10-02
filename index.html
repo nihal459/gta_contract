@@ -1,0 +1,381 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Global Tutor Academy - Abstract</title>
+    <style>
+
+
+        .page-break {
+        page-break-before: always;
+        /* Ensures a new page starts before the element with class "page-break" */
+        }
+        body {
+            font-family: 'Arial', sans-serif;
+            line-height: 1.6;
+            color: #333;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+        }
+
+        .container {
+            width: 90%;
+            max-width: 1000px;
+            margin: 20px auto;
+            background-color: #fff;
+            padding: 30px;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        h1
+        {
+            text-align: center;
+            font-size: 2.5em;
+            color: #0077b6;
+        }
+
+        h2 {
+            font-size: 1.8em;
+            margin-bottom: 10px;
+            color: #0077b6;
+            border-bottom: 2px solid #ddd;
+            padding-bottom: 5px;        
+        }
+
+        h3
+        {
+            color: #0077b6;
+
+        }
+
+        .section {
+            margin-bottom: 20px;
+        }
+
+        .pricing-table, .email-table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 10px;
+        }
+
+        .pricing-table th, .pricing-table td, .email-table th, .email-table td {
+            border: 1px solid #ddd;
+            padding: 10px;
+            text-align: left;
+        }
+
+        .pricing-table th, .email-table th {
+            background-color: #0077b6;
+            color:white;
+        }
+
+        .footer {
+            text-align: center;
+            margin-top: 20px;
+        }
+
+        .footer p {
+            font-size: 0.9em;
+            color: #777;
+        }
+
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <h1>Global Tutor Academy</h1>
+
+        <div class="section overview">
+            <p style="text-align: center;">Global Tutor Academy is an organization providing online tuition classes for students from class 1 to 12. Our aim is to create a web application that allows students to enroll in courses and maintain their studies efficiently.</p>
+        </div>
+
+        <div class="section overview">
+            <h2>Objective</h2>
+            <p>The objective of the Global Tutor Academy web application is to:</p>
+            <ul>
+                <li><strong>Facilitate Comprehensive Course and Batch Management:</strong> Provide a centralized platform for admins to manage courses, batches, and schedules, ensuring efficient organization and availability of classes.</li>
+                <li><strong>Streamline Tutor and Student Interactions:</strong> Enable seamless registration and management for tutors and students, including profile updates, course assignments, and batch management.</li>
+                <li><strong>Enhance Operational Efficiency:</strong> Implement intuitive dashboards for admins and tutors to monitor key metrics, handle joining requests, and access relevant notifications and updates.</li>
+            </ul>
+        </div>
+
+        <div class="section overview">
+            <h2>User Types and Interfaces</h2>
+            <p>The application will have three main types of users and four types of interfaces:</p>
+            <ul>
+                <li>Users:
+                    <ul>
+                        <li>Admin</li>
+                        <li>Tutors</li>
+                        <li>Students</li>
+                    </ul>
+                </li>
+                <li>Interfaces:
+                    <ul>
+                        <li>Website Interface: In English & Arabic</li>
+                        <li>Admin Interface</li>
+                        <li>Student Interface: In English & Arabic</li>
+                        <li>Tutor Interface</li>
+                    </ul>
+                </li>
+            </ul>
+        </div>
+
+        <div class="section interfaces">
+            <h3>1. Admin Interface</h3>
+            <p>The admin interface is designed to provide comprehensive control over the application’s operations:</p>
+            <ul>
+                <li><strong>Dashboard:</strong> Displays key metrics, including total enrolled students, tutors, batches, and courses. It also includes tables for today's classes and joining requests, enabling quick access to important information.</li>
+                <li><strong>Manage Tutors:</strong> A table listing all tutors with options to add, verify, update, or delete. Includes a search bar for filtering tutors by name, course, or phone number, and filters for verified status, course type, etc.</li>
+                <li><strong>Manage Students:</strong> A table displaying all students with options to add, view more details, or delete students. Search and filter options are provided based on name, course, batch, and tutor in charge.</li>
+                <li><strong>Manage Courses:</strong> Lists all courses with functionalities to add, edit, or delete courses. Searchable and filterable by course name, duration, fee, start, and end dates.</li>
+                <li><strong>Manage Joining Requests:</strong> Table format showing all student joining requests with options to view, update, or delete requests. Includes search and filter capabilities by student name, course, tutor, and date range.</li>
+                <li><strong>Manage Batches:</strong> Provides a table view of all batches with details and options to create, edit, or delete batches. Includes batch ID, batch name, schedule, and associated students.</li>
+            </ul>
+
+            <h3>2. Student Interface</h3>
+            <p>The student interface focuses on providing a seamless experience for course enrollment and study management:</p>
+            <ul>
+                <li><strong>Course Browsing:</strong> Allows students to browse available courses and view details about the tutors teaching them.</li>
+                <li><strong>Enrollment Process:</strong> Students can choose a tutor and request to join classes, providing necessary information like name, class, school, contact details etc.</li>
+                <li><strong>Student Registration</strong> The students are supposed to create an account for themselves before joining the class. For creating an account they can use google mail registration method or create a account with a unique username and password</li>
+                <li><strong>Email Notification:</strong> On successful account creation, course enrollment, the students will receive email</li>
+                <li><strong>Payment:</strong>The students can pay the fee along with the joining request or when the request is accepted through their dashboard</li>
+                <li><strong>Payment Method:</strong> The students can pay into the company's account through payment portals powered by Stripe/Qpay/Paypal using their debit/credit cards</li>
+            </ul>
+            <p>Student Dashboard will contain</p>
+            <ul>
+                <li><strong>Profile Management:</strong> Students can update personal information such as username, password, email, and contact details.</li>
+                <li><strong>Class Management:</strong> Displays the batch details, timetable along with meeting links, meeting password, recorded classes link, etc.</li>
+                <li><strong>Course Management:</strong> Displays all information related to enrolled courses, fee payment, fee status, tutor details, batch alloted, etc.</li>
+                <li><strong>Course Discontinuation Form:</strong> In the Course management section, near the enrolled courses there will be an option called "discontinue course" which on clicking a form appears with </li>
+                <li><strong>Language Changer:</strong> The students can change the language of student dashboard interface to arabic or default English</li>
+            </ul>
+
+            <h3>3. Tutor Interface</h3>
+            <p>The tutor interface provides tools for managing classes and student interactions:</p>
+            <ul>
+                <li><strong>Registration and Login:</strong> Tutors can register and log in using a secure username and password system.</li>
+                <li><strong>Profile Management:</strong> Tutors can update their profiles with comprehensive details, including education, availability, and personal bio.</li>
+                <li><strong>Batch Management:</strong> Allows tutors to create, edit, or delete batches. Each batch includes a unique ID, name, schedule, meeting links, and student management capabilities.</li>
+                <li><strong>Class Joining Requests:</strong> Tutors manage requests from students, with options to accept, decline, or leave requests pending until further notice.</li>
+                <li><strong>Student Batch Assignment:</strong> Tutors can assign students to specific batches, view batch details, and manage student participation in classes.</li>
+            </ul>
+
+            <h3>4. Website Interface</h3>
+            <p>The website provides an intuitive interface for all users to access necessary information and functions:</p>
+            <ul>
+                <li><strong>Home Page:</strong> General overview of services and offerings.</li>
+                <li><strong>About Page:</strong> Detailed information about Global Tutor Academy and its mission.</li>
+                <li><strong>Course and Tutor Profiles:</strong> Detailed tutor profiles with videos, bios, and course offerings.</li>
+                <li><strong>Contact Page:</strong> Easy access to contact information and a contact form for inquiries.</li>
+                <li><strong>Student and Tutor Registration Pages:</strong> Step-by-step guides and links for registration and login for both students and tutors.</li>
+                <li><strong>Language Changer:</strong> The viewers can change the language of the website interface to Arabic or defulat language - English</li>
+            </ul>
+        </div>
+
+        <div class="page-break"></div>
+
+        <div class="section interfaces">
+            <h3>Timeline and Milestones</h3>
+            <p>Upon signing the agreement, the project will be divided into two phases and is estimated to be completed within a 3 and a half month period. The development process will be structured around key milestones to ensure timely and efficient progress.</p>
+            <ul>
+                <li><strong>Project Concept and Functional Scope:</strong> This initial phase will involve defining and finalizing the comprehensive scope and functionalities of the web application to align with client expectations.</li>
+                <li><strong>Budget Agreement and UI/UX Approval:</strong> In this phase, we will confirm the project budget, establish payment terms, and review the design mockups, wireframes, and overall user flow. Client approval will be required to proceed to the next phase.</li>
+                <li><strong>Initial Payment and Commencement of Development:</strong> Following the UI/UX approval and receipt of an advance payment, the development phase will commence in accordance with the approved project plan.</li>
+                <li><strong>Development and Testing:</strong> During this period, the core development work will be carried out, followed by thorough testing to ensure all functionalities meet the agreed-upon specifications and quality standards.</li>
+                <li><strong>Final Payment and Ongoing Maintenance:</strong> Upon successful delivery and acceptance of the project, the remaining payment will be processed. Post-completion, we will provide continuous support, updates, and maintenance on an annual basis as per the agreed terms.</li>
+            </ul>
+            <hr>
+            <ul>
+                <li><strong>Phase I: </strong>This will include all features except the payment gateway.</li>
+                <li><strong>Timeline: </strong>The phase will be completed in 2 months and 10 days.</li>
+                <li><strong>Development Duration: </strong>2 months for frontend & backend development.</li>
+                <li><strong>Testing Period: </strong>10 days for testing.</li>
+                <li><strong>Hosting Options: </strong>After testing, the web application can either be hosted officially or wait until Phase II is completed, which is the integration of the payment gateway (MyFatoorah).</li>
+            </ul>        
+            <hr>
+            <ul>
+                <li><strong>Phase II: </strong>This includes integration of payment gateway</li>
+                <li><strong>Features: </strong>Includes international payment facility, QPay, NAPS, Qatar riyal transactions</li>
+                <li><strong>Timeline: </strong>1 month 15 days (Can take longer if there are any complications in bank & legal procedures)</li>
+                <li><strong>Note: </strong>The client has to create an account on myfatoorah, link their business bank account, complete legal formalities for setting up Qpay, NAPS and handover over the account api keys for development which will be kept confidential by the developer even after the development process is complete</li>
+                <li><strong>Note: </strong>MyFatoorah has its own transaction and other charges which has to taken by the client</li>
+            </ul>
+        </div>
+    
+
+        <div class="section pricing">
+            <h2>Pricing</h2>
+            <table class="pricing-table">
+                <thead>
+                    <tr>
+                        <th>Service</th>
+                        <th>Cost (QAR)</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>UI/UX Design</td>
+                        <td>1,085</td>
+                    </tr>
+                    <tr>
+                        <td>Backend Development</td>
+                        <td>1,950</td>
+                    </tr>
+                    <tr>
+                        <td>Multiple Language Setup</td>
+                        <td>1,085</td>
+                    </tr>
+                    <tr>
+                        <td>Payment Integration</td>
+                        <td>650</td>
+                    </tr>
+                    <tr>
+                        <td>Google Login Integration</td>
+                        <td>220</td>
+                    </tr>
+                    <tr>
+                        <td>Testing</td>
+                        <td>435</td>
+                    </tr>
+                    <tr>
+                        <td>Hosting and Deployment</td>
+                        <td>640</td>
+                    </tr>
+                </tbody> 
+                <tfoot>
+                    <tr>
+                        <th>Total</th>
+                        <th>6,065 QAR</th>
+                    </tr>
+                </tfoot>
+            </table>
+        </div>
+        
+
+        <div class="section maintenance">
+            <h2>Annual Maintenance Cost (AMC)</h2>
+            <table class="pricing-table">
+                <thead>
+                    <tr>
+                        <th>Package</th>
+                        <th>Details</th>
+                        <th>Cost (QAR)</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Package 1</td>
+                        <td>3GB storage with SQLite or MySQL database</td>
+                        <td>345</td>
+                    </tr>
+                    <tr>
+                        <td>Package 2</td>
+                        <td>2GB storage with PostgreSQL database</td>
+                        <td>645</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+
+        <div class="section domain-email">
+            <h2>Domain and Professional Email Costs</h2>
+            <table class="email-table">
+                <thead>
+                    <tr>
+                        <th>Service</th>
+                        <th>Cost (QAR)</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Domain (per year, including SSL and transaction charges)</td>
+                        <td>40</td>
+                    </tr>
+                    <tr>
+                        <td>Professional Email (1 year subscription - 1 Email Account)</td>
+                        <td>38</td>
+                    </tr>
+                    <tr>
+                        <td>Professional Email (2 years subscription - 1 Email Account)</td>
+                        <td>61</td>
+                    </tr>
+                    <tr>
+                        <td>Professional Email (4 years subscription - 1 Email Account)</td>
+                        <td>96</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+
+        <div class="section agreement">
+            <h2>Agreement</h2>
+            <p><strong>This Agreement</strong> is made on this ____ day of ____________, 2024, by and between:</p>
+            <p><strong>Developers: </strong>Aadil, Nihal</p>
+            <p><strong>Emails: </strong>nihal.techworks@gmail.com</p>
+            <p><strong>Phone Numbers: </strong>Nihal: +91 8129033535, Aadil: +974 31504924</p>
+            <p><strong>Addresses: </strong>Nihal: Kochi, Kerala, India(683517) Aadil: Qatar</p>
+            <p><strong>AND</strong></p>
+            <p><strong>Client Name: </strong></p>
+            <p><strong>Client Business Name: </strong></p>
+            <p><strong>Client Phone number: </strong></p>
+            <p><strong>Client Email: </strong></p>
+            <p><strong>Client Address: </strong></p>
+        </div>
+        
+
+        <div class="section agreement">
+            <h2>Terms & Conditions</h2>
+            <ul>
+                <h4>Payment Terms:</h4>
+                <li><strong>Development Cost: </strong>Initial payment of <strong>50%(2707.5 QAR)</strong> required to start the phase I of project. <strong>(50% of Phase I: 5415 QAR which is 2707.5 QAR)</strong></li>
+                <li><strong>Domain: </strong>domain costs <strong>40 QAR</strong> with SSL certificate. It can be purchased and maintained by client or developers <strong>(Yearly Payment)</strong></li>
+                <li><strong>Professional Mail: </strong>professional mail costs 38 QAR (refer pricing table). It can be purchased and maintained by client or developers <strong>(Yearly Payment)</strong></li>
+                <li><strong>Cloud Hosting: </strong> <strong>345 QAR</strong> to be paid initially/within 1 month/before hosting the webapplication officially <strong>(Yearly Payment)</strong></li>
+                <li><strong>Development Cost: </strong>Final payment due upon completion of the phase I project.</li>
+                <li>Maintenance costs and additional fees for domain and professional email are separate and billed annually.</li>
+                <h4>Support: </h4>
+                <li>Will be provided online.</li>
+                <li>Comprehensive user manuals for the application will be provided to the client</li>
+                <h4>Updates: </h4>
+                <li>Updates and corrections will be handled through online meetings.</li>
+                <li>If the client requests new features or major updates, an additional fee will be charged as per the scope of work.</li>
+                <li>Any errors or issues arising from these updates or existing features will be corrected free of charge.</li>
+                <h4>Termination: </h4>
+                <li>Either party may terminate this agreement with 30 days notice.</li>
+                <h4>Notes: </h4>
+                <li>If the traffic increases in the website, we will have to upgrade the hosting platform accordingly</li>
+                <li>Both parties agree to keep any confidential information shared during the term of this agreement private and not disclose it to any third party without prior consent.</li>
+            </ul>
+        </div>
+
+        <div class="section agreement">
+            <h2>Signatures</h2>
+            <div style="float:left; width: 50%;">
+                <h3><strong>Developers</strong></h3>
+                <p><strong>Aadil: </strong></p>
+                <p><strong>Nihal: </strong></p>
+            </div>
+        
+            <div style="float:right; text-align:right; width: 50%;">
+                <h3><strong>Client</strong></h3>
+                <p><strong>Client Name: </strong>Signature</p>
+            </div>
+        
+            <div style="clear:both;"></div>
+            <br><br><br>
+        </div>
+
+
+
+
+
+    </div>
+</body>
+
+</html>
